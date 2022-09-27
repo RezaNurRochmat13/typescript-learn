@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "compile": "npx tsc src/main.ts",
+    "start": "node src/main.js"   
+  },
   "dependencies": {
     "typescript": "^4.8.3"
   }
