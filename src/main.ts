@@ -1,14 +1,19 @@
+import Persegi from "./bangun-datar/persegi";
 import Reza from "./user/reza";
 import User from "./user/user"
 
 export function main() {
     const user = new User("Reza");
-    const reza = new Reza("Reja");
 
-    console.info("INFO: ", user.getName());
-    console.info("INFO: ", reza.getName());
+    console.info("INFO: ", "Application is running successfully");
+
+    // Bangun Datar 
+    const persegiOne = new Persegi(4);
+    console.log(persegiOne.keliling());
+    console.log(persegiOne.luas());
 
     return `Hello TypeScript`
 }
 
-console.log(main())
+// Execute main application
+main();
