@@ -1,18 +1,17 @@
 import Persegi from "./bangun-datar/persegi";
-import Reza from "./user/reza";
-import User from "./user/user"
+import PersegiPanjang from "./bangun-datar/persegi_panjang";
 
 export function main() {
-    const user = new User("Reza");
-
-    console.info("INFO: ", "Application is running successfully");
-
     // Bangun Datar 
     const persegiOne = new Persegi(4);
-    console.log(persegiOne.keliling());
-    console.log(persegiOne.luas());
+    console.log("Keliling Persegi :", persegiOne.keliling());
+    console.log("Luas Persegi :", persegiOne.luas());
 
-    return `Hello TypeScript`
+    const persegiPanjangOne = new PersegiPanjang(10, 23);
+    console.log("Keliling Persegi Panjang :", persegiPanjangOne.keliling());
+    console.log("Luas Persegi Panjang :", persegiPanjangOne.luas());
+
+    console.info("INFO: ", "Application is running successfully");
 }
 
 // Execute main application
